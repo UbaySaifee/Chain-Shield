@@ -1,0 +1,42 @@
+{
+  "network": "localhost",
+  "chainId": 31337,
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "testUser": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "demoRecipient": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+  "timestamp": "2026-09-27T05:45:15.026Z",
+  "contracts": {
+    "MockERC20": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "name": "ShieldToken",
+      "symbol": "SHLD",
+      "decimals": 18,
+      "type": "BENIGN_ERC20",
+      "expectedRisk": "LOW",
+      "description": "Audited benign standard ERC-20 reference token."
+    },
+    "SafeVault": {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "name": "SafeVault",
+      "type": "BENIGN_VAULT",
+      "expectedRisk": "LOW",
+      "description": "Reentrancy-guarded escrow contract with transparent accounting."
+    },
+    "HoneypotToken": {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "name": "TrapToken",
+      "symbol": "TRAP",
+      "decimals": 18,
+      "type": "MALICIOUS_HONEYPOT",
+      "expectedRisk": "CRITICAL",
+      "description": "Honeypot token with trading locked and unilateral owner controls."
+    },
+    "DangerousApprovalSpender": {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "name": "DangerousApprovalSpender",
+      "type": "MALICIOUS_APPROVAL_SPENDER",
+      "expectedRisk": "HIGH",
+      "description": "Contract designed to exploit unlimited token allowances and drain funds."
+    }
+  }
+}

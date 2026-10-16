@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Hardhat & Solidity
+blockchain/artifacts/
+blockchain/cache/
+blockchain/typechain/
+blockchain/coverage/
+blockchain/coverage.json
+
+# Java & Maven
+backend/target/
+*.class
+.mvn/wrapper/maven-wrapper.jar
+
+# Frontend Build
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Python
+analysis/__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Environment and Secrets
+.env
+*.env
+!.env.example
+
+# IDE and System Files
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store
+Thumbs.db
